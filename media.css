@@ -31,7 +31,10 @@
   .site-map__cell--language {
     width: 176px; }
     .site-map__cell--language ul li a.leng::after {
-      margin-left: 50px; } }
+      margin-left: 50px; }
+
+  .bgPage__logo h1 {
+    font-size: 26px; } }
 @media (max-width: 640px) {
   .container {
     max-width: 330px; }

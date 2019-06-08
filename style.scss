@@ -3,44 +3,6 @@
   margin: 0;
 }
 
-.bgPage {
-  padding-top: 18%;
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  height: 100vh;
-  background: rgb(44, 44, 44);
-  font-family: 'Lobster', cursive;
-  .bgPage__logo {
-    display: block;
-    margin: 0 auto;
-    width: 192px;
-    height: 21px;
-    background: url("images/icons/white-logo.svg") no-repeat center;
-    -webkit-background-size: cover;
-    background-size: cover;
-  }
-  h1 {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    color: #ffffff;
-    font-family: "Roboto", sans-serif;
-    font-style: italic;
-    font-size: 56px;
-    text-transform: uppercase;
-    width: 40%;
-    padding: 1% 7% 1% 10%;
-    border-radius: 5px;
-    margin-bottom: 30px;
-    &.green {
-    color: #49A144;
-    border-radius: 5px;
-  }
-}
-}
-
 .wrapper {
   display: none;
 }
@@ -139,6 +101,8 @@ header {
       border: 1px solid #e0e0e0;
       border-radius: 2px;
 
+      text-align-last: center;
+      text-align: center;
       text-transform: uppercase;
       color: #1d1d1d;
       outline: none !important;
@@ -520,7 +484,7 @@ footer {
 .site-map__cell {
   display: flex;
   flex-grow: 1;
-  width: 33%;
+  min-width: 33%;
   flex-direction: column;
   align-items: flex-start;
   &--language{
@@ -533,7 +497,7 @@ footer {
     select {
       width: 176px;
       height: 40px;
-      padding: 0 33%;
+      padding: 0 30%;
       background: #3B3B3B;
       border-radius: 2px;
       color: #fff;
@@ -802,4 +766,42 @@ footer {
 @keyframes a-ltr-before{
   0% {transform: translateX(0)}
   100% {transform: translateX(200%)}
+}
+
+.bgPage {
+  padding-top: 18%;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  background: rgb(44, 44, 44);
+  font-family: 'Lobster', cursive;
+  .bgPage__logo {
+    display: block;
+    margin: 0 auto;
+    width: 192px;
+    height: 21px;
+    background: url("images/icons/white-logo.svg") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  h1 {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-size: 56px;
+    text-transform: uppercase;
+    width: 40%;
+    padding: 1% 7% 1% 10%;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    &.green {
+      color: #49A144;
+      border-radius: 5px;
+    }
+  }
 }
