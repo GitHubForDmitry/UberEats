@@ -50,6 +50,9 @@
       font-size: 26px;
     }
   }
+  .modal {
+    left: 30%;
+  }
 }
 
 @media (max-width: 640px) {
@@ -59,7 +62,10 @@
   .bgPage__wrap {
     max-width: 330px;
   }
-
+  .modal {
+    left: 22%;
+    right: 0;
+  }
   .header {
     display: flex;
     align-content: space-between;

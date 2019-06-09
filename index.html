@@ -18,15 +18,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="bgPage">
-  <div class="bgPage__wrap">
-    <div class="bgPage__logo animated fadeInUp delay-3s"></div>
-    <div class="h1-wrap animated delay-2s fadeOutUp">
-      <h1 class="animated fadeInRightBig">быстро</h1>
-      <h1 class="green animated fadeInLeftBig">и вкусно</h1>
-    </div>
-  </div>
-</div>
+
 <div class="wrapper padding-y">
   <header class="body" id="myHeader">
     <div class="header container">
@@ -58,13 +50,13 @@
         </div>
       </div>
       <div class="header__auth">
-
+        <p id="user-name"></p>
         <div class="auth__sign">
-          <a href="#/">Sign in</a>
+          <a class="modal-show" href="#/" data-modal="#sign-in">Sign in</a>
         </div>
 
         <div class="auth__register">
-          <a href="#/">Register</a>
+          <a class="modal-show" href="#/" data-modal="#reg-in">Register</a>
         </div>
 
         <div class="auth__basket">
@@ -347,9 +339,70 @@
   </footer>
 </div>
 
+<!--
+
+Btn top
+
+-->
+
 <button onclick="topFunction()" id="btn-top" title="Go to top">
   <img class="btnImg animated" src="images/icons/arrowTop.png" alt="">
 </button>
+
+<!--
+
+Onload window
+
+-->
+<div class="bgPage">
+  <div class="bgPage__wrap">
+    <div class="bgPage__logo animated delay-3s"></div>
+    <div class="h1-wrap animated delay-2s fadeOutUp">
+      <h1 class="animated fadeInRightBig">быстро</h1>
+      <h1 class="green animated fadeInLeftBig">и вкусно</h1>
+    </div>
+  </div>
+</div>
+<!--
+
+Modal window
+
+-->
+<div class="modal-wrap hide" id="reg-in">
+</div>
+<div class="modal-wrap hide" id="sign-in">
+</div>
+<div class="modal hide animated tada">
+  <button class="modal-close">Close</button>
+  <form method="post" action="back.php" id="form">
+    <label for="name">
+      <input
+              type="text"
+              placeholder="Ваше имя"
+              name="name"
+              id="name"
+              minlength="3"
+      >
+    </label>
+    <label for="email">
+      <input
+              type="email"
+              placeholder="Ваш email"
+              name="email"
+              id="email"
+              aria-required="true"
+      >
+    </label>
+    <input
+            name="sub"
+            type="submit"
+            id="submitBtn"
+            value="Зарегистрироватся"
+            class="submit"
+    >
+  </form>
+</div>
+
 <script src="main.js"></script>
 </body>
 </html>
