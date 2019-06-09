@@ -10,11 +10,10 @@ function scrollFunction() {
   let btnImg = document.querySelector(".btnImg");
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
       btn.style.display = "block";
+      btnImg.classList.add("bounce");
     } else {
       btn.style.display = "none";
-    }
-  btn.onmouseover = function () {
-    btnImg.classList.add("bounce");
+      btnImg.classList.remove("bounce");
     }
 }
 
