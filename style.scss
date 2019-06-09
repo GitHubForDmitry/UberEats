@@ -563,14 +563,14 @@ footer {
       font-family: "Roboto", sans-serif;
       font-size: 13px;
       line-height: 15px;
-      /* identical to box height */
+      border-bottom: 1px solid transparent;
+      transition: .3s all ease-in-out;
 
       text-decoration: none;
       color: #fff;
-    }
-    &:nth-child(1) {
-      display: flex;
-      flex-direction: column;
+      &:hover {
+        border-bottom: 1px solid #fff;
+      }
     }
   }
 }
@@ -696,6 +696,7 @@ footer {
   border: 1px solid transparent;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  animation: infinite;
   img {
     display: flex;
     margin: 0 auto;
@@ -716,6 +717,11 @@ footer {
   display: none;
 }
 
+.h1-wrap {
+  position: absolute;
+  top: 20%;
+  text-align: center;
+}
 
 .h1-wrap h1{
   position: relative;
@@ -768,38 +774,97 @@ footer {
   100% {transform: translateX(200%)}
 }
 
-.bgPage {
-  padding-top: 18%;
+@keyframes scaleBgPage{
+  0% {
+    transform: scale(3);
+    top: 50%;
+    left: 45%;
+  }
+  20% {
+    transform: scale(2.8);
+    top: 45%;
+    left: 40%;
+  }
+  30% {
+    transform: scale(2.6);
+    top: 40%;
+    left: 35%;
+  }
+  40% {
+    transform: scale(2.4);
+    top: 35%;
+    left: 30%;
+  }
+  50% {
+    transform: scale(2.2);
+    top: 30%;
+    left: 25%;
+  }
+  60% {
+    transform: scale(2);
+    top: 25%;
+    left: 20%;
+  }
+  70% {
+    transform: scale(1.7);
+    top: 20%;
+    left: 15%;
+  }
+  80% {
+    transform: scale(1.4);
+    top: 15%;
+    left: 10%;
+  }
+  90% {
+    transform: scale(1.2);
+    top: 10%;
+    left: 5%;
+  }
+  100% {
+    transform: scale(1);
+    top: 16px;
+    left: 0;
+  }
+}
+.bgPage__wrap {
+  max-width: 1024px;
+  margin: 0 auto;
   position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-self: center;
+}
+.bgPage {
   display: block;
   margin: 0 auto;
   width: 100%;
   height: 100vh;
-  background: rgb(44, 44, 44);
+  background: #fff;
   font-family: 'Lobster', cursive;
   .bgPage__logo {
+    position: absolute;
+    top: 50%;
+    left: 43%;
     display: block;
     margin: 0 auto;
-    width: 192px;
-    height: 21px;
-    background: url("images/icons/white-logo.svg") no-repeat center;
-    -webkit-background-size: cover;
-    background-size: cover;
+    width: 120px;
+    height: 40px;
+    background: url("images/icons/logo.svg") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+    animation: scaleBgPage .5s forwards;
+    transform: scale(3);
   }
 
   h1 {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    color: #ffffff;
+    color: #000;
     font-family: "Roboto", sans-serif;
     font-style: italic;
     font-size: 56px;
     text-transform: uppercase;
-    width: 40%;
-    padding: 1% 7% 1% 10%;
     border-radius: 5px;
-    margin-bottom: 30px;
     &.green {
       color: #49A144;
       border-radius: 5px;
