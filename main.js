@@ -6,10 +6,14 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("btn-top").style.display = "block";
+  let btn = document.getElementById("btn-top");
+  let btnImg = document.querySelector(".btnImg");
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      btn.style.display = "block";
+      btnImg.classList.add("bounce");
     } else {
-        document.getElementById("btn-top").style.display = "none";
+      btn.style.display = "none";
+      btnImg.classList.remove("bounce");
     }
 }
 
@@ -40,7 +44,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     body.style.display = "block";
     bgPage.style.display = "none";
     wrapper.style.display = "block";
-     }, 4000);
+     }, 3500);
   body.style.display = "none";
   bgPage.style.display = "block";
   wrapper.style.display = "none";

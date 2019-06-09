@@ -2,6 +2,9 @@
   .container {
     max-width: 640px; }
 
+  .bgPage__wrap {
+    max-width: 640px; }
+
   .header__logo a {
     padding-left: 8px;
     width: 88px;
@@ -37,6 +40,9 @@
     font-size: 26px; } }
 @media (max-width: 640px) {
   .container {
+    max-width: 330px; }
+
+  .bgPage__wrap {
     max-width: 330px; }
 
   .header {
