@@ -41,14 +41,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
   let body = document.querySelector(".body");
   let bgPage = document.querySelector(".bgPage");
   let wrapper = document.querySelector(".wrapper");
-  // setInterval(function(){
+  setInterval(function(){
     body.style.display = "block";
     bgPage.style.display = "none";
     wrapper.style.display = "block";
-  // }, 3600);
-  // body.style.display = "none";
-  // bgPage.style.display = "block";
-  // wrapper.style.display = "none";
+  }, 3600);
+  body.style.display = "none";
+  bgPage.style.display = "block";
+  wrapper.style.display = "none";
 });
 
 // Modal window
