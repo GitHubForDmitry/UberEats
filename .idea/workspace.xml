@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a4b3e6c-48b5-4d4b-b461-78a39b12d26e" name="Default Changelist" comment="" />
+    <list default="true" id="0a4b3e6c-48b5-4d4b-b461-78a39b12d26e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/ceabd3331b53c2fc068c329a7a47c55c85d710c9/style.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/ceabd3331b53c2fc068c329a7a47c55c85d710c9/style.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media.scss" beforeDir="false" afterPath="$PROJECT_DIR$/media.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6380">
-              <caret line="350" column="20" selection-start-line="350" selection-start-column="14" selection-end-line="350" selection-end-column="20" />
+            <state relative-caret-position="268">
+              <caret line="395" column="14" selection-start-line="395" selection-start-column="14" selection-end-line="395" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -27,29 +36,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="1012">
+              <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="22">
-                <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="828" selection-start-line="828" selection-end-line="837" selection-end-column="1" />
+            <state relative-caret-position="356">
+              <caret line="1005" column="21" selection-start-line="1005" selection-start-column="21" selection-end-line="1005" selection-end-column="21" />
+              <folding>
+                <element signature="e#20061#20330#0" />
+                <element signature="e#20332#20593#0" />
+                <element signature="e#20610#20687#0" />
+                <element signature="e#20689#20950#0" />
+                <element signature="e#20952#21205#0" />
+                <element signature="e#21295#21563#0" />
+                <element signature="e#21565#21825#0" />
+                <element signature="e#21843#21922#0" />
+                <element signature="e#23047#23726#0" />
+                <element signature="e#23813#23870#0" />
+                <element signature="e#23891#23948#0" />
+                <element signature="e#23969#24026#0" />
+                <element signature="e#24047#24104#0" />
+                <element signature="e#24125#24182#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,31 +70,59 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/media.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="58" column="17" lean-forward="true" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+            <state relative-caret-position="22">
+              <caret line="65" column="12" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>select</find>
-      <find>33%</find>
-      <find>640px</find>
-      <find>site-map</find>
-      <find>site-map__cell-</find>
-      <find>site-map__cell-link</find>
-      <find>pag</find>
-      <find>a-ltr-after</find>
-      <find>bg</find>
       <find>h1-wrap</find>
-      <find>bgPage__wrap</find>
+      <find>bgPage__logo</find>
+      <find>plac</find>
       <find>bgPage</find>
-      <find>btn-top</find>
+      <find>register</find>
+      <find>back.php</find>
+      <find>loadPhones</find>
+      <find>class=&quot;submit&quot;</find>
+      <find>sign</find>
+      <find>header__auth</find>
+      <find>close</find>
       <find>.container</find>
+      <find>form</find>
+      <find>modal</find>
+      <find>submitBtn</find>
+      <find>fadeInRight</find>
+      <find>tada</find>
+      <find>delay-3s</find>
+      <find>fadeInRightBig</find>
+      <find>fadeInLeftBig</find>
+      <find>animated</find>
+      <find>fadeOutUp</find>
+      <find>header__order</find>
+      <find>header__round-way</find>
+      <find>fb</find>
+      <find>tw</find>
+      <find>in</find>
+      <find>site-map__cell--social</find>
+      <find>#/</find>
+      <find>submit</find>
     </findStrings>
+    <replaceStrings>
+      <replace>social--links--facebook</replace>
+      <replace>social--links--twitter</replace>
+      <replace>social--links--instagram</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -90,10 +131,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/phones.json" />
+        <option value="$PROJECT_DIR$/back.php" />
+        <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/animate.css" />
+        <option value="$PROJECT_DIR$/media.scss" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style.scss" />
-        <option value="$PROJECT_DIR$/main.js" />
-        <option value="$PROJECT_DIR$/media.scss" />
       </list>
     </option>
   </component>
@@ -108,7 +153,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -120,6 +164,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -128,7 +173,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -154,22 +205,23 @@
       <updated>1559995805962</updated>
       <workItem from="1559995807401" duration="1801000" />
       <workItem from="1560000457318" duration="238000" />
-      <workItem from="1560061915635" duration="5590000" />
+      <workItem from="1560061915635" duration="32113000" />
+      <workItem from="1560152053275" duration="731000" />
+      <workItem from="1560162211104" duration="2728000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7629000" />
+    <option name="totallyTimeSpent" value="37611000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.255119" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26065302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -178,7 +230,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.325054" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.325054" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -190,6 +242,14 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phones.json" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -200,31 +260,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/back.php" />
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="1012">
+          <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="828" selection-start-line="828" selection-end-line="837" selection-end-column="1" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/animate.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/media.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="58" column="17" lean-forward="true" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+        <state relative-caret-position="22">
+          <caret line="65" column="12" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6380">
-          <caret line="350" column="20" selection-start-line="350" selection-start-column="14" selection-end-line="350" selection-end-column="20" />
+        <state relative-caret-position="268">
+          <caret line="395" column="14" selection-start-line="395" selection-start-column="14" selection-end-line="395" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="1005" column="21" selection-start-line="1005" selection-start-column="21" selection-end-line="1005" selection-end-column="21" />
+          <folding>
+            <element signature="e#20061#20330#0" />
+            <element signature="e#20332#20593#0" />
+            <element signature="e#20610#20687#0" />
+            <element signature="e#20689#20950#0" />
+            <element signature="e#20952#21205#0" />
+            <element signature="e#21295#21563#0" />
+            <element signature="e#21565#21825#0" />
+            <element signature="e#21843#21922#0" />
+            <element signature="e#23047#23726#0" />
+            <element signature="e#23813#23870#0" />
+            <element signature="e#23891#23948#0" />
+            <element signature="e#23969#24026#0" />
+            <element signature="e#24047#24104#0" />
+            <element signature="e#24125#24182#0" />
+          </folding>
         </state>
       </provider>
     </entry>
