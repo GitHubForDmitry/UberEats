@@ -2,18 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width,
-          user-scalable=no,
-          initial-scale=1.0,
-          maximum-scale=1.0,
-          minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" type="img/ico" href="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/favicon-6540f9632b.ico"/>
   <title>UBER EATS</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="media.css">
-  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="media.css" media="orientation:portrait">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 </head>
@@ -23,9 +17,9 @@
   <header class="body" id="myHeader">
     <div class="header container">
       <div class="header__logo">
-        <a href="#/"></a>
+        <a href="index.html"></a>
       </div>
-      <div class="header__round-way">
+      <div class="header__order">
         <div class="asap">
           <select name="time" id="time">
             <option value="">asap</option>
@@ -68,7 +62,7 @@
 
   <section class="search">
     <div class="container">
-      <div class="search__content">
+      <form action="" method="get" class="search__content">
         <div class="search__content--icon"></div>
 
         <label for="search">
@@ -79,7 +73,7 @@
                   style="color: #000;"
           >
         </label>
-      </div>
+      </form>
       <div class="search__round-way-mobile">
         <div class="asap">
           <p>When</p>
@@ -119,7 +113,7 @@
             <p class="restaurant-table">Макдоналдс</p>
 
             <div class="catalog-items">
-              <div class="currency">&#8372</div>
+              <div class="currency">₴</div>
               <ul>
                 <li class="snack">Бургеры</li>
               </ul>
@@ -135,7 +129,7 @@
             <p class="restaurant-table">WOKWEI</p>
 
             <div class="catalog-items">
-              <div class="currency">&#8372</div>
+              <div class="currency">₴</div>
               <ul>
                 <li>Китайська</li>
                 <li>Азiатська</li>
@@ -152,8 +146,8 @@
             <p class="restaurant-table">YIZHA</p>
 
             <div class="catalog-items">
-              <div class="currency">&#8372</div>
-              <div class="currency">&#8372</div>
+              <div class="currency">₴</div>
+              <div class="currency">₴</div>
               <ul>
                 <li>Американська</li>
                 <li>Бургеры</li>
@@ -171,8 +165,8 @@
             <p class="restaurant-table">Musafir (вул. Саксаганського)</p>
 
             <div class="catalog-items">
-              <div class="currency">&#8372</div>
-              <div class="currency">&#8372</div>
+              <div class="currency">₴</div>
+              <div class="currency">₴</div>
               <ul>
                 <li>Близькосхідна</li>
               </ul>
@@ -188,7 +182,7 @@
             <p class="restaurant-table">WOKWEI</p>
 
             <div class="catalog-items">
-              <div class="currency">&#8372</div>
+              <div class="currency">₴</div>
               <ul>
                 <li>Китайська</li>
                 <li>Азiатська</li>
@@ -205,8 +199,8 @@
             <p class="restaurant-table">Milk Bar</p>
 
             <div class="catalog-items">
-              <div class="currency">&#8372</div>
-              <div class="currency">&#8372</div>
+              <div class="currency">₴</div>
+              <div class="currency">₴</div>
               <ul>
                 <li>Десерти</li>
                 <li>Європейська</li>
@@ -223,8 +217,8 @@
             <p class="restaurant-table">Mimosa Brooklyn Pizza</p>
 
             <div class="catalog-items">
-              <div class="currency">&#8372</div>
-              <div class="currency">&#8372</div>
+              <div class="currency">₴</div>
+              <div class="currency">₴</div>
               <ul>
                 <li>Італійська</li>
                 <li>Піцца</li>
@@ -242,8 +236,8 @@
             <p class="restaurant-table">To Be</p>
 
             <div class="catalog-items">
-              <div class="currency">&#8372</div>
-              <div class="currency">&#8372</div>
+              <div class="currency">₴</div>
+              <div class="currency">₴</div>
               <ul>
                 <li>Японська</li>
                 <li>Азiатська</li>
@@ -261,8 +255,8 @@
             <p class="restaurant-table">Druzi (вул. Прорiзна)</p>
 
             <div class="catalog-items">
-              <div class="currency">&#8372</div>
-              <div class="currency">&#8372</div>
+              <div class="currency">₴</div>
+              <div class="currency">₴</div>
               <ul>
                 <li>Американська</li>
                 <li>Сучасна європейська</li>
@@ -279,7 +273,7 @@
   <footer>
     <div class="container">
       <div class="logo-white">
-        <a href="#/"></a>
+        <a href="index.html"></a>
       </div>
       <div class="site-map">
         <div class="site-map__cell">
@@ -291,47 +285,47 @@
             </select>
           </div>
           <div class="site-map__cell--social">
-            <a href="#/"><b>#</b>UberEats</a>
+            <a href="index.html"><span class="hashtag">#</span>UberEats</a>
             <div class="site-map__cell--social--links">
-              <a href="#/" class="fb"></a>
-              <a href="#/" class="tw"></a>
-              <a href="#/" class="in"></a>
+              <a href="//www.facebook.com/UberEats/" class="social--links--facebook"></a>
+              <a href="//twitter.com/ubereats" class="social--links--twitter"></a>
+              <a href="//www.instagram.com/ubereats/" class="social--links--instagram"></a>
             </div>
           </div>
         </div>
         <div class="site-map__cell">
           <ul>
-            <li class="site-map__cell-link"><a href="#/">About UberEats</a></li>
-            <li class="site-map__cell-link"><a href="#/">Become a Delivery Partner</a></li>
-            <li class="site-map__cell-link"><a href="#/">Become a Restaurant Partner</a></li>
+            <li class="site-map__cell-link"><a href="//about.ubereats.com">About UberEats</a></li>
+            <li class="site-map__cell-link"><a href="//uber.com/drive/delivery/">Become a Delivery Partner</a></li>
+            <li class="site-map__cell-link"><a href="//about.ubereats.com/restaurants">Become a Restaurant Partner</a></li>
           </ul>
         </div>
 
         <div class="site-map__cell">
           <ul>
-            <li class="site-map__cell-link"><a href="#/">See all cities</a></li>
-            <li class="site-map__cell-link"><a href="#/">Pricing</a></li>
-            <li class="site-map__cell-link"><a href="#/">Help</a></li>
-            <li class="site-map__cell-link"><a href="#/">FAQs</a></li>
+            <li class="site-map__cell-link"><a href="//about.ubereats.com/cities/">See all cities</a></li>
+            <li class="site-map__cell-link"><a href="//help.uber.com/h/a3e4363b-761f-4acd-a555-1eff290f5ee6">Pricing</a></li>
+            <li class="site-map__cell-link"><a href="//help.uber.com/eaters">Help</a></li>
+            <li class="site-map__cell-link"><a href="//about.ubereats.com/faq">FAQs</a></li>
           </ul>
         </div>
       </div>
       <div class="store">
         <div class="store__appStore">
-          <a href="#/"></a>
+          <a href="https://www.apple.com/ios/app-store/"></a>
         </div>
         <div class="store__googlePlay">
-          <a href="#/"></a>
+          <a href="https://store.google.com/countrypicker"></a>
         </div>
       </div>
       <div class="privacy">
         <a class="privacy__rights">
           &copy 2019 Uber Technologies Inc
         </a>
-        <a href="#/" class="privacy__link">
+        <a href="https://privacy.uber.com/policy/" class="privacy__link">
           Privacy
         </a>
-        <a href="#/" class="privacy__terms">
+        <a href="https://www.uber.com/legal/terms" class="privacy__terms">
           Terms
         </a>
       </div>
@@ -374,7 +368,7 @@ Modal window
 </div>
 <div class="modal hide animated tada">
   <button class="modal-close">Close</button>
-  <form method="post" action="back.php" id="form">
+  <form method="post" action="" id="form">
     <label for="name">
       <input
               type="text"
@@ -393,13 +387,12 @@ Modal window
               aria-required="true"
       >
     </label>
-    <input
+    <button
             name="sub"
             type="submit"
             id="submitBtn"
-            value="Зарегистрироватся"
             class="submit"
-    >
+    >Зарегистрироваться</button>
   </form>
 </div>
 
