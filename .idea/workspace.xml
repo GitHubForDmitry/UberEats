@@ -75,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="500" column="12" selection-start-line="500" selection-start-column="12" selection-end-line="500" selection-end-column="12" />
+              <caret line="500" column="41" selection-start-line="500" selection-start-column="7" selection-end-line="500" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -91,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/media.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="243" column="36" selection-start-line="243" selection-start-column="25" selection-end-line="243" selection-end-column="36" />
+              <caret line="102" column="27" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -111,7 +111,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>header__round-way</find>
       <find>fb</find>
       <find>tw</find>
       <find>in</find>
@@ -137,10 +136,11 @@
       <find>site-map__cell</find>
       <find>select</find>
       <find>site-map__language--select--opt</find>
-      <find>option</find>
       <find>opt</find>
       <find>site-map__</find>
       <find>select--opt</find>
+      <find>site-map__language--select--optiop</find>
+      <find>option</find>
     </findStrings>
     <replaceStrings>
       <replace>social--links--facebook</replace>
@@ -162,9 +162,9 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/main.js" />
-        <option value="$PROJECT_DIR$/media.scss" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style.scss" />
+        <option value="$PROJECT_DIR$/media.scss" />
       </list>
     </option>
   </component>
@@ -240,12 +240,12 @@
       <workItem from="1560152053275" duration="731000" />
       <workItem from="1560162211104" duration="3390000" />
       <workItem from="1560180970385" duration="211000" />
-      <workItem from="1560247141403" duration="7125000" />
+      <workItem from="1560247141403" duration="7443000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45609000" />
+    <option name="totallyTimeSpent" value="45927000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -314,13 +314,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/media.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="243" column="36" selection-start-line="243" selection-start-column="25" selection-end-line="243" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -331,7 +324,14 @@
     <entry file="file://$PROJECT_DIR$/style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="500" column="12" selection-start-line="500" selection-start-column="12" selection-end-line="500" selection-end-column="12" />
+          <caret line="500" column="41" selection-start-line="500" selection-start-column="7" selection-end-line="500" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="102" column="27" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="27" />
         </state>
       </provider>
     </entry>
