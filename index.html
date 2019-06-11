@@ -7,7 +7,7 @@
   <link rel="icon" type="img/ico" href="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/favicon-6540f9632b.ico"/>
   <title>UBER EATS</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="media.css" media="orientation:portrait">
+  <link rel="stylesheet" href="media.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 </head>
@@ -17,14 +17,14 @@
   <header class="body" id="myHeader">
     <div class="header container">
       <div class="header__logo">
-        <a href="index.html"></a>
+        <a href="index.html"><img src="images/icons/logo.svg" alt="logo"></a>
       </div>
       <div class="header__order">
         <div class="asap">
-          <select name="time" id="time">
-            <option value="">asap</option>
-            <option value="">30 m</option>
-            <option value="">1 h</option>
+          <select class="asap__select" name="time" id="time">
+            <option class="asap__select--option" value="asap">asap</option>
+            <option class="asap__select--option" value="">30 m</option>
+            <option class="asap__select--option" value="">1 h</option>
           </select>
         </div>
 
@@ -34,6 +34,7 @@
           <div class="destination__current-location"></div>
           <label for="search">
             <input
+                    name="search"
                     type="text"
                     class="location"
                     id="search"
@@ -67,6 +68,7 @@
 
         <label for="search">
           <input
+                  name="search"
                   type="search"
                   placeholder="Search for restaurant"
                   autocomplete="off"
@@ -77,10 +79,10 @@
       <div class="search__round-way-mobile">
         <div class="asap">
           <p>When</p>
-          <select class="select" name="time">
-            <option value="">asap</option>
-            <option value="">30 m</option>
-            <option value="">1 h</option>
+          <select class="asap__select" name="time">
+            <option class="asap__select--option" value="asap">asap</option>
+            <option class="asap__select--option" value="30 minutes">30 m</option>
+            <option class="asap__select--option" value="">1 hour</option>
           </select>
         </div>
         <div class="destination">
@@ -89,6 +91,7 @@
 
           <label for="search" >
             <input
+                    name="search"
                     type="text"
                     class="location"
                     id="search-mobile"
@@ -115,7 +118,7 @@
             <div class="catalog-items">
               <div class="currency">₴</div>
               <ul>
-                <li class="snack">Бургеры</li>
+                <li class="catalog-items__snack">Бургеры</li>
               </ul>
             </div>
 
@@ -131,8 +134,8 @@
             <div class="catalog-items">
               <div class="currency">₴</div>
               <ul>
-                <li>Китайська</li>
-                <li>Азiатська</li>
+                <li class="catalog-items__snack">Китайська</li>
+                <li class="catalog-items__snack">Азiатська</li>
               </ul>
             </div>
 
@@ -149,9 +152,9 @@
               <div class="currency">₴</div>
               <div class="currency">₴</div>
               <ul>
-                <li>Американська</li>
-                <li>Бургеры</li>
-                <li>Вулична...</li>
+                <li class="catalog-items__snack">Американська</li>
+                <li class="catalog-items__snack">Бургеры</li>
+                <li class="catalog-items__snack">Вулична...</li>
               </ul>
             </div>
 
@@ -168,7 +171,7 @@
               <div class="currency">₴</div>
               <div class="currency">₴</div>
               <ul>
-                <li>Близькосхідна</li>
+                <li class="catalog-items__snack">Близькосхідна</li>
               </ul>
             </div>
 
@@ -184,8 +187,8 @@
             <div class="catalog-items">
               <div class="currency">₴</div>
               <ul>
-                <li>Китайська</li>
-                <li>Азiатська</li>
+                <li class="catalog-items__snack">Китайська</li>
+                <li class="catalog-items__snack">Азiатська</li>
               </ul>
             </div>
 
@@ -202,8 +205,8 @@
               <div class="currency">₴</div>
               <div class="currency">₴</div>
               <ul>
-                <li>Десерти</li>
-                <li>Європейська</li>
+                <li class="catalog-items__snack">Десерти</li>
+                <li class="catalog-items__snack">Європейська</li>
               </ul>
             </div>
 
@@ -220,9 +223,9 @@
               <div class="currency">₴</div>
               <div class="currency">₴</div>
               <ul>
-                <li>Італійська</li>
-                <li>Піцца</li>
-                <li>Американська</li>
+                <li class="catalog-items__snack">Італійська</li>
+                <li class="catalog-items__snack">Піцца</li>
+                <li class="catalog-items__snack">Американська</li>
               </ul>
             </div>
 
@@ -239,9 +242,9 @@
               <div class="currency">₴</div>
               <div class="currency">₴</div>
               <ul>
-                <li>Японська</li>
-                <li>Азiатська</li>
-                <li>Сушi</li>
+                <li class="catalog-items__snack">Японська</li>
+                <li class="catalog-items__snack">Азiатська</li>
+                <li class="catalog-items__snack">Сушi</li>
               </ul>
             </div>
 
@@ -258,8 +261,8 @@
               <div class="currency">₴</div>
               <div class="currency">₴</div>
               <ul>
-                <li>Американська</li>
-                <li>Сучасна європейська</li>
+                <li class="catalog-items__snack">Американська</li>
+                <li class="catalog-items__snack">Сучасна європейська</li>
               </ul>
             </div>
 
@@ -278,44 +281,49 @@
       <div class="site-map">
         <div class="site-map__cell">
           <div class="site-map__cell--language">
-            <select name="lang" id="lang">
-              <option value="eng">english</option>
-              <option value="eng">russian</option>
-              <option value="eng">ukraine</option>
+            <select class="site-map__language--select"
+                    name="lang"
+                    id="lang">
+              <option class="site-map__language--select--option"
+                      value="eng">english</option>
+              <option class="site-map__language--select--option"
+                      value="eng">russian</option>
+              <option class="site-map__language--select--option"
+                      value="eng">ukraine</option>
             </select>
           </div>
           <div class="site-map__cell--social">
-            <a href="index.html"><span class="hashtag">#</span>UberEats</a>
+            <a class="site-map__cell--social--link" href="index.html"><span class="hashtag">#</span>UberEats</a>
             <div class="site-map__cell--social--links">
-              <a href="//www.facebook.com/UberEats/" class="social--links--facebook"></a>
-              <a href="//twitter.com/ubereats" class="social--links--twitter"></a>
-              <a href="//www.instagram.com/ubereats/" class="social--links--instagram"></a>
+              <a href="https://www.facebook.com/UberEats/" class="social--links--facebook"></a>
+              <a href="https://www.twitter.com/ubereats" class="social--links--twitter"></a>
+              <a href="https://www.instagram.com/ubereats/" class="social--links--instagram"></a>
             </div>
           </div>
         </div>
         <div class="site-map__cell">
-          <ul>
-            <li class="site-map__cell-link"><a href="//about.ubereats.com">About UberEats</a></li>
-            <li class="site-map__cell-link"><a href="//uber.com/drive/delivery/">Become a Delivery Partner</a></li>
-            <li class="site-map__cell-link"><a href="//about.ubereats.com/restaurants">Become a Restaurant Partner</a></li>
+          <ul class="site-map__cell--wrap">
+            <li><a class="site-map__cell-link" href="https://about.ubereats.com">About UberEats</a></li>
+            <li><a class="site-map__cell-link" href="https://uber.com/drive/delivery/">Become a Delivery Partner</a></li>
+            <li><a class="site-map__cell-link" href="https://about.ubereats.com/restaurants">Become a Restaurant Partner</a></li>
           </ul>
         </div>
 
         <div class="site-map__cell">
-          <ul>
-            <li class="site-map__cell-link"><a href="//about.ubereats.com/cities/">See all cities</a></li>
-            <li class="site-map__cell-link"><a href="//help.uber.com/h/a3e4363b-761f-4acd-a555-1eff290f5ee6">Pricing</a></li>
-            <li class="site-map__cell-link"><a href="//help.uber.com/eaters">Help</a></li>
-            <li class="site-map__cell-link"><a href="//about.ubereats.com/faq">FAQs</a></li>
+          <ul class="site-map__cell--wrap">
+            <li><a class="site-map__cell-link" href="https://about.ubereats.com/cities/">See all cities</a></li>
+            <li><a class="site-map__cell-link" href="https://help.uber.com/h/a3e4363b-761f-4acd-a555-1eff290f5ee6">Pricing</a></li>
+            <li><a class="site-map__cell-link" href="https://help.uber.com/eaters">Help</a></li>
+            <li><a class="site-map__cell-link" href="https://about.ubereats.com/faq">FAQs</a></li>
           </ul>
         </div>
       </div>
       <div class="store">
         <div class="store__appStore">
-          <a href="https://www.apple.com/ios/app-store/"></a>
+          <a class="store__appStore--link" href="https://www.apple.com/ios/app-store/"></a>
         </div>
         <div class="store__googlePlay">
-          <a href="https://store.google.com/countrypicker"></a>
+          <a class="store__googlePlay--link" href="https://store.google.com/countrypicker"></a>
         </div>
       </div>
       <div class="privacy">
@@ -340,7 +348,7 @@ Btn top
 -->
 
 <button onclick="topFunction()" id="btn-top" title="Go to top">
-  <img class="btnImg animated" src="images/icons/arrowTop.png" alt="">
+  <img class="btnImg animated" src="images/icons/arrowTop.png" alt="button-to-top">
 </button>
 
 <!--
@@ -371,18 +379,18 @@ Modal window
   <form method="post" action="" id="form">
     <label for="name">
       <input
+              name="name"
               type="text"
               placeholder="Ваше имя"
-              name="name"
               id="name"
               minlength="3"
       >
     </label>
     <label for="email">
       <input
+              name="email"
               type="email"
               placeholder="Ваш email"
-              name="email"
               id="email"
               aria-required="true"
       >

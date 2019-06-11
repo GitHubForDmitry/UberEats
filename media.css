@@ -5,7 +5,7 @@
   .bgPage__wrap {
     max-width: 640px; }
 
-  .header__logo a {
+  .header__logo a img {
     padding-left: 8px;
     width: 88px;
     -webkit-background-size: contain;
@@ -15,7 +15,7 @@
     width: 215px;
     height: 40px; }
 
-  .asap > a {
+  .asap__select {
     padding: 7px 3px;
     font-size: 13px;
     line-height: 24px; }
@@ -58,10 +58,10 @@
     align-items: center;
     justify-content: space-between; }
 
-  .auth__register a {
+  .modal-show {
     margin-right: 0; }
 
-  .header__round-way {
+  .header__order {
     display: none;
     position: relative;
     left: -9999px; }
@@ -75,12 +75,12 @@
       display: flex;
       justify-content: start;
       flex-direction: column; }
-      .search__round-way-mobile .asap select {
+      .search__round-way-mobile .asap .asap__select {
         width: 65px;
         padding: 7px;
         text-align: center; }
-      .search__round-way-mobile .asap select,
-      .search__round-way-mobile .asap option {
+      .search__round-way-mobile .asap .asap__select,
+      .search__round-way-mobile .asap .asap__select--option {
         margin-right: 9px;
         box-sizing: border-box;
         appearance: none;
@@ -91,10 +91,10 @@
         border-radius: 2px;
         text-transform: uppercase;
         color: #1d1d1d;
-        outline: none !important;
+        outline: none;
         background-color: #fff; }
-        .search__round-way-mobile .asap select,
-        .search__round-way-mobile .asap option {
+        .search__round-way-mobile .asap .asap__select,
+        .search__round-way-mobile .asap .asap__select--option {
           -webkit-appearance: none;
           appearance: none; }
     .search__round-way-mobile .destination {
@@ -155,6 +155,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%; }
+    .site-map__cell--social {
+      margin-bottom: 42px; }
     .site-map__cell--language ul li a {
       box-sizing: border-box;
       background: #3b3b3b;
@@ -162,7 +164,7 @@
       width: 227px;
       height: 40px;
       padding: 10px 5px 5px 30px;
-      outline: none !important;
+      outline: none;
       border: 1px solid #3b3b3b;
       font-family: "Roboto", sans-serif;
       text-transform: uppercase;
@@ -189,11 +191,19 @@
       width: 14px;
       height: 8px;
       margin-left: 100px;
-      background: url("images/icons/arrowBot.png") no-repeat center;
+      background: url("images/icons/arrow-bot.png") no-repeat center;
       -webkit-background-size: contain;
       background-size: contain; }
     .site-map__cell__social {
       margin-bottom: 40px; }
+    .site-map__cell .site-map__language--select--option {
+      left: 33%;
+      width: 176px;
+      height: 40px;
+      outline: none;
+      text-align: center;
+      text-align-last: center;
+      cursor: pointer; }
 
   .site-map__cell:nth-child(2) ul li.footer-link:last-child {
     margin-bottom: 23px; }
@@ -232,7 +242,7 @@
   .header__round-way {
     display: none; }
 
-  .site-map__cell ul li.site-map__cell-link:last-child {
+  .site-map__cell ul li:last-child .site-map__cell-link {
     margin-bottom: 23px; } }
 
 /*# sourceMappingURL=media.css.map */
