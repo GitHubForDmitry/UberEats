@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0a4b3e6c-48b5-4d4b-b461-78a39b12d26e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/ceabd3331b53c2fc068c329a7a47c55c85d710c9/style.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/ceabd3331b53c2fc068c329a7a47c55c85d710c9/style.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-177">
-              <caret line="426" column="36" lean-forward="true" selection-start-line="426" selection-start-column="36" selection-end-line="426" selection-end-column="36" />
+            <state relative-caret-position="330">
+              <caret line="121" column="21" lean-forward="true" selection-start-line="121" selection-start-column="21" selection-end-line="121" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -57,11 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="974" selection-start-line="974" selection-end-line="974" />
-              <folding>
-                <element signature="e#16998#17595#0" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="474" column="26" selection-start-line="474" selection-start-column="26" selection-end-line="474" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -91,7 +85,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>asap</find>
       <find>site-map__cell-link</find>
       <find>site-map__cell</find>
       <find>site-map__language--select--opt</find>
@@ -113,14 +106,15 @@
       <find>catalog__row-block</find>
       <find>modal</find>
       <find>clip</find>
-      <find>header</find>
       <find>body</find>
       <find>webkit-background-size</find>
       <find>webkit</find>
       <find>auth__sign</find>
       <find>itemprop</find>
       <find>@</find>
+      <find>header</find>
       <find>.modal</find>
+      <find>search-m</find>
     </findStrings>
     <replaceStrings>
       <replace>social--links--facebook</replace>
@@ -219,12 +213,12 @@
       <workItem from="1560338688586" duration="5415000" />
       <workItem from="1560351501187" duration="921000" />
       <workItem from="1560362896297" duration="221000" />
-      <workItem from="1560367304771" duration="1793000" />
+      <workItem from="1560367304771" duration="2923000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54405000" />
+    <option name="totallyTimeSpent" value="55535000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -306,13 +300,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-177">
-          <caret line="426" column="36" lean-forward="true" selection-start-line="426" selection-start-column="36" selection-end-line="426" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-684">
@@ -320,13 +307,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="121" column="21" lean-forward="true" selection-start-line="121" selection-start-column="21" selection-end-line="121" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="974" selection-start-line="974" selection-end-line="974" />
-          <folding>
-            <element signature="e#16998#17595#0" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="474" column="26" selection-start-line="474" selection-start-column="26" selection-end-line="474" selection-end-column="26" />
         </state>
       </provider>
     </entry>
