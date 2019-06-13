@@ -386,7 +386,7 @@ footer {
 
 .site-map {
   display: flex;
-  justify-content: safe;
+  justify-content: center;
   align-items: flex-start;
   padding: 30px 0;
   width: 100%;
