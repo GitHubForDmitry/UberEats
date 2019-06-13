@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta data-react-helmet="true" name="description"
         content="Лучшие местные рестораны стали ближе к вам. С помощью аккаунта Uber вы можете заказать доставку любимых блюд прямо к своей двери."
-        itemprop="description"/>
+       />
   <meta data-react-helmet="true" name="twitter:description"
         content="Лучшие местные рестораны стали ближе к вам. С помощью аккаунта Uber вы можете заказать доставку любимых блюд прямо к своей двери."/>
   <meta data-react-helmet="true" name="og:description"
@@ -21,7 +21,7 @@
 <body>
 
 <div class="wrapper padding-y">
-  <header class="body" id="myHeader">
+  <div class="body" id="myHeader">
     <div class="header container">
       <div class="header__logo">
         <a class="header__logo--link" href="index.html"><img src="images/icons/logo.svg" alt="Uber eats"></a>
@@ -73,19 +73,20 @@
         </div>
       </div>
     </div>
-  </header>
+  </div>
 
   <section class="search">
     <div class="container">
-      <form action="" method="get" class="search__content">
+      <form method="get" class="search__content">
         <div class="search__content--icon"></div>
 
-        <label for="search">
+        <label for="search-label">
           <input
                   name="search"
                   type="search"
                   placeholder="Search for restaurant"
                   autocomplete="off"
+                  id="search-label"
                   style="color: #000;"
           >
         </label>
@@ -108,15 +109,15 @@
           <p>To</p>
           <div class="current-location"></div>
           <form action="" class="current-location__form">
-            <label for="search" >
+            <label for="search-mobile" >
               <input
+                      id="search-mobile"
                       name="search"
                       type="text"
                       class="location"
-                      id="search-mobile"
                       placeholder="ul. Bolshaya Dmitrov"
               >
-              <button name="search__restaurant" type="submit" class="destination__form--btn"></button>
+              <button name="search__restaurant" type="submit" class="destination__form--btn" id="button-mobile"></button>
             </label>
           </form>
         </div>
@@ -370,7 +371,7 @@
       </div>
       <div class="privacy">
         <a class="privacy__rights">
-          &copy 2019 Uber Technologies Inc
+          © 2019 Uber Technologies Inc
         </a>
         <a href="https://privacy.uber.com/policy/" class="privacy__link">
           Privacy
@@ -418,7 +419,7 @@ Modal window
 </div>
 <div class="modal hide animated tada">
   <button class="modal-close">Close</button>
-  <form method="post" action="" id="form">
+  <form method="post" id="form">
     <label for="name">
       <input
               name="name"
