@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a4b3e6c-48b5-4d4b-b461-78a39b12d26e" name="Default Changelist" comment="" />
+    <list default="true" id="0a4b3e6c-48b5-4d4b-b461-78a39b12d26e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="121" column="21" lean-forward="true" selection-start-line="121" selection-start-column="21" selection-end-line="121" selection-end-column="21" />
+            <state relative-caret-position="180">
+              <caret line="348" column="39" selection-start-line="348" selection-start-column="35" selection-end-line="348" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -47,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="474" column="26" lean-forward="true" selection-start-line="474" selection-start-column="26" selection-end-line="474" selection-end-column="26" />
+            <state relative-caret-position="180">
+              <caret line="614" column="11" selection-start-line="614" selection-start-column="5" selection-end-line="614" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -76,9 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>site-map__cell</find>
-      <find>site-map__language--select--opt</find>
-      <find>opt</find>
       <find>site-map__</find>
       <find>site-map__language--select--optiop</find>
       <find>option</find>
@@ -87,7 +86,6 @@
       <find>заре</find>
       <find>btn</find>
       <find>destination</find>
-      <find>button</find>
       <find>input</find>
       <find>select</find>
       <find>alt</find>
@@ -106,6 +104,10 @@
       <find>.modal</find>
       <find>safe</find>
       <find>search-m</find>
+      <find>site-map</find>
+      <find>button</find>
+      <find>location</find>
+      <find>social</find>
     </findStrings>
     <replaceStrings>
       <replace>social--links--facebook</replace>
@@ -128,8 +130,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/media.scss" />
         <option value="$PROJECT_DIR$/main.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style.scss" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -152,6 +154,17 @@
               <item name="UberEats" type="b2602c69:ProjectViewProjectNode" />
               <item name="UberEats" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="UberEats" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UberEats" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UberEats" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UberEats" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -161,7 +174,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../javascript" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -204,12 +217,12 @@
       <workItem from="1560338688586" duration="5415000" />
       <workItem from="1560351501187" duration="921000" />
       <workItem from="1560362896297" duration="221000" />
-      <workItem from="1560367304771" duration="3165000" />
+      <workItem from="1560367304771" duration="5176000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55777000" />
+    <option name="totallyTimeSpent" value="57788000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -296,13 +309,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="121" column="21" lean-forward="true" selection-start-line="121" selection-start-column="21" selection-end-line="121" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="37">
@@ -312,8 +318,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="474" column="26" lean-forward="true" selection-start-line="474" selection-start-column="26" selection-end-line="474" selection-end-column="26" />
+        <state relative-caret-position="180">
+          <caret line="614" column="11" selection-start-line="614" selection-start-column="5" selection-end-line="614" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="348" column="39" selection-start-line="348" selection-start-column="35" selection-end-line="348" selection-end-column="39" />
         </state>
       </provider>
     </entry>

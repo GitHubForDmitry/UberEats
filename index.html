@@ -54,7 +54,7 @@
                     autocomplete="off"
             >
           </label>
-            <button name="destination__form" type="submit" class="destination__form--btn"></button>
+            <button name="button-dest" type="submit" class="destination__form--btn"></button>
           </form>
         </div>
       </div>
@@ -77,11 +77,12 @@
 
   <div class="search">
     <div class="container">
-      <form method="get" class="search__content">
+      <form method="get" class="search__content" aria-label="search-form">
         <div class="search__content--icon"></div>
 
         <label for="search-label">
           <input
+                  aria-label="search-label"
                   name="search"
                   type="search"
                   placeholder="Search for restaurant"
@@ -90,7 +91,7 @@
                   style="color: #000;"
           >
         </label>
-        <button name="search__restaurant" type="submit" class="destination__form--btn"></button>
+        <button name="button-search" type="submit" class="destination__form--btn"></button>
       </form>
       <div class="search__round-way-mobile">
         <div class="asap">
@@ -108,9 +109,10 @@
         <div class="destination">
           <p>To</p>
           <div class="current-location"></div>
-          <form class="current-location__form">
+          <form class="current-location__form" aria-label="search-location">
             <label for="search-mobile">
               <input
+                      aria-label="search-location"
                       id="search-mobile"
                       name="search"
                       type="text"
@@ -120,7 +122,7 @@
             </label>
             <label for="button-mobile">
               <button
-                      name="search__restaurant"
+                      name="button-mobile"
                       type="submit"
                       class="destination__form--btn"
                       id="button-mobile">
@@ -344,9 +346,9 @@
           <div class="site-map__cell--social">
             <a class="site-map__cell--social--link" href="index.html"><span class="hashtag">#</span>UberEats</a>
             <div class="site-map__cell--social--links">
-              <a href="https://www.facebook.com/UberEats/" class="social--links--facebook"></a>
-              <a href="https://www.twitter.com/ubereats" class="social--links--twitter"></a>
-              <a href="https://www.instagram.com/ubereats/" class="social--links--instagram"></a>
+              <a href="https://www.facebook.com/UberEats/" class="social--links--facebook" aria-hidden="true"></a>
+              <a href="https://www.twitter.com/ubereats" class="social--links--twitter" aria-hidden="true"></a>
+              <a href="https://www.instagram.com/ubereats/" class="social--links--instagram" aria-hidden="true"></a>
             </div>
           </div>
         </div>
@@ -369,10 +371,10 @@
       </div>
       <div class="store">
         <div class="store__appStore">
-          <a class="store__appStore--link" href="https://www.apple.com/ios/app-store/"></a>
+          <a class="store__appStore--link" href="https://www.apple.com/ios/app-store/" aria-hidden="true"></a>
         </div>
         <div class="store__googlePlay">
-          <a class="store__googlePlay--link" href="https://store.google.com/countrypicker"></a>
+          <a class="store__googlePlay--link" href="https://store.google.com/countrypicker" aria-hidden="true"></a>
         </div>
       </div>
       <div class="privacy">
@@ -396,7 +398,7 @@ Btn top
 
 -->
 
-<button onclick="topFunction()" id="btn-top" title="Go to top">
+<button onclick="topFunction()" id="btn-top" title="Go to top" name="button-top">
   <img class="btnImg animated" src="images/icons/arrowTop.png" alt="button-to-top">
 </button>
 
@@ -424,7 +426,7 @@ Modal window
 <div class="modal-wrap hide" id="sign-in">
 </div>
 <div class="modal hide animated tada">
-  <button class="modal-close">Close</button>
+  <button name="button-close" class="modal-close">Close</button>
   <form method="post" id="form">
     <label for="name">
       <input
@@ -445,7 +447,7 @@ Modal window
       >
     </label>
     <button
-            name="sub"
+            name="button-sub"
             type="submit"
             id="submitBtn"
             class="submit"
