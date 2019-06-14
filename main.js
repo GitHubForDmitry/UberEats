@@ -38,15 +38,15 @@ function myFunction() {
 
 // preload window
 window.addEventListener('DOMContentLoaded', (event) => {
-  let body = document.querySelector(".body");
+  let wrapperInner = document.querySelector(".wrapper__inner");
   let bgPage = document.querySelector(".bgPage");
   let wrapper = document.querySelector(".wrapper");
   setInterval(function(){
-    body.style.display = "block";
+    wrapperInner.style.display = "block";
     bgPage.style.display = "none";
     wrapper.style.display = "block";
   }, 3600);
-  body.style.display = "none";
+  wrapperInner.style.display = "none";
   bgPage.style.display = "block";
   wrapper.style.display = "none";
 });

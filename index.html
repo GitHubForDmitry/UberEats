@@ -13,15 +13,16 @@
         content="Лучшие местные рестораны стали ближе к вам. С помощью аккаунта Uber вы можете заказать доставку любимых блюд прямо к своей двери."/>
   <link rel="icon" type="img/ico" href="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/favicon-6540f9632b.ico"/>
   <title>UBER EATS</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/modal-window.css">
+  <link rel="stylesheet" href="styles/media.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <div class="wrapper padding-y">
-  <div class="body" id="myHeader">
+  <div class="wrapper__inner" id="myHeader">
     <div class="header container">
       <div class="header__logo">
         <a class="header__logo--link" href="index.html"><img src="images/icons/logo.svg" alt="Uber eats"></a>
@@ -135,7 +136,7 @@
 
   <main class="catalog">
     <div class="container">
-      <h1>
+      <h1 class="catalog__title">
         Kyiv Restaurants
       </h1>
 
@@ -322,7 +323,7 @@
     </div>
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="container">
       <div class="logo-white">
         <a href="index.html"></a>
@@ -435,6 +436,7 @@ Modal window
               placeholder="Ваше имя"
               id="name"
               minlength="3"
+              class="modal__input"
       >
     </label>
     <label for="email">
@@ -444,6 +446,7 @@ Modal window
               placeholder="Ваш email"
               id="email"
               aria-required="true"
+              class="modal__input"
       >
     </label>
     <button
