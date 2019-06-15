@@ -4,27 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta data-react-helmet="true" name="description"
+        content="Лучшие местные рестораны стали ближе к вам. С помощью аккаунта Uber вы можете заказать доставку любимых блюд прямо к своей двери."
+       />
+  <meta data-react-helmet="true" name="twitter:description"
+        content="Лучшие местные рестораны стали ближе к вам. С помощью аккаунта Uber вы можете заказать доставку любимых блюд прямо к своей двери."/>
+  <meta data-react-helmet="true" name="og:description"
+        content="Лучшие местные рестораны стали ближе к вам. С помощью аккаунта Uber вы можете заказать доставку любимых блюд прямо к своей двери."/>
   <link rel="icon" type="img/ico" href="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/favicon-6540f9632b.ico"/>
   <title>UBER EATS</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="media.css" media="orientation:portrait">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/modal-window.css">
+  <link rel="stylesheet" href="styles/media.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <div class="wrapper padding-y">
-  <header class="body" id="myHeader">
+  <div class="wrapper__inner" id="myHeader">
     <div class="header container">
       <div class="header__logo">
-        <a href="index.html"></a>
+        <a class="header__logo--link" href="index.html"><img src="images/icons/logo.svg" alt="Uber eats"></a>
       </div>
       <div class="header__order">
         <div class="asap">
-          <select name="time" id="time">
-            <option value="">asap</option>
-            <option value="">30 m</option>
-            <option value="">1 h</option>
+          <select class="asap__select"
+                  name="time"
+                  id="time"
+                  aria-label="asap__select"
+          >
+            <option class="asap__select--option" value="asap">asap</option>
+            <option class="asap__select--option" value="">30 m</option>
+            <option class="asap__select--option" value="">1 h</option>
           </select>
         </div>
 
@@ -32,8 +44,10 @@
 
         <div class="destination">
           <div class="destination__current-location"></div>
-          <label for="search">
+          <form class="destination__form">
+            <label for="search">
             <input
+                    name="search"
                     type="text"
                     class="location"
                     id="search"
@@ -41,6 +55,8 @@
                     autocomplete="off"
             >
           </label>
+            <button name="button-dest" type="submit" class="destination__form--btn"></button>
+          </form>
         </div>
       </div>
       <div class="header__auth">
@@ -58,219 +74,256 @@
         </div>
       </div>
     </div>
-  </header>
+  </div>
 
-  <section class="search">
+  <div class="search">
     <div class="container">
-      <form action="" method="get" class="search__content">
+      <form method="get" class="search__content" aria-label="search-form">
         <div class="search__content--icon"></div>
 
-        <label for="search">
+        <label for="search-label">
           <input
+                  aria-label="search-label"
+                  name="search"
                   type="search"
                   placeholder="Search for restaurant"
                   autocomplete="off"
+                  id="search-label"
                   style="color: #000;"
           >
         </label>
+        <button name="button-search" type="submit" class="destination__form--btn"></button>
       </form>
       <div class="search__round-way-mobile">
         <div class="asap">
           <p>When</p>
-          <select class="select" name="time">
-            <option value="">asap</option>
-            <option value="">30 m</option>
-            <option value="">1 h</option>
+          <select
+                  class="asap__select"
+                  name="time"
+                  aria-label="search__round-way-mobile--select"
+          >
+            <option class="asap__select--option" value="asap">asap</option>
+            <option class="asap__select--option" value="30 minutes">30 m</option>
+            <option class="asap__select--option" value="">1 hour</option>
           </select>
         </div>
         <div class="destination">
           <p>To</p>
           <div class="current-location"></div>
-
-          <label for="search" >
-            <input
-                    type="text"
-                    class="location"
-                    id="search-mobile"
-                    placeholder="ul. Bolshaya Dmitrov"
-            >
-          </label>
+          <form class="current-location__form" aria-label="search-location">
+            <label for="search-mobile">
+              <input
+                      aria-label="search-location"
+                      id="search-mobile"
+                      name="search"
+                      type="text"
+                      class="location"
+                      placeholder="ul. Bolshaya Dmitrov"
+              >
+            </label>
+            <label for="button-mobile">
+              <button
+                      name="button-mobile"
+                      type="submit"
+                      class="destination__form--btn"
+                      id="button-mobile">
+              </button>
+            </label></form>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
   <main class="catalog">
     <div class="container">
-      <h1>
+      <h1 class="catalog__title">
         Kyiv Restaurants
       </h1>
 
       <div class="catalog__row">
         <div class="catalog__row-block">
-          <img src="images/img/1.jpg" alt="MacDonalds">
-          <div class="catalog__row-block--wrapper">
-            <p class="restaurant-table">Макдоналдс</p>
+          <a href="#/" class="catalog__row-block--link">
+            <img class="catalog__row-block--link--img" src="images/img/1.jpg" alt="MacDonalds">
+            <div class="catalog__row-block--wrapper">
+              <p class="restaurant-table">Макдоналдс</p>
 
-            <div class="catalog-items">
-              <div class="currency">₴</div>
-              <ul>
-                <li class="snack">Бургеры</li>
-              </ul>
+              <div class="catalog-items">
+                <div class="currency">₴</div>
+                <ul>
+                  <li class="catalog-items__snack">Бургеры</li>
+                </ul>
+              </div>
+
+              <p class="time">25 - 35 Min</p>
             </div>
-
-            <p class="time">25 - 35 Min</p>
-          </div>
+          </a>
         </div>
 
         <div class="catalog__row-block">
-          <img src="images/img/2.jpg" alt="WOKWEI">
-          <div class="catalog__row-block--wrapper">
-            <p class="restaurant-table">WOKWEI</p>
+          <a href="#/" class="catalog__row-block--link">
+            <img class="catalog__row-block--link--img" src="images/img/2.jpg" alt="WOKWEI">
+            <div class="catalog__row-block--wrapper">
+                <p class="restaurant-table">WOKWEI</p>
 
-            <div class="catalog-items">
-              <div class="currency">₴</div>
-              <ul>
-                <li>Китайська</li>
-                <li>Азiатська</li>
-              </ul>
-            </div>
+                <div class="catalog-items">
+                  <div class="currency">₴</div>
+                  <ul>
+                    <li class="catalog-items__snack">Китайська</li>
+                    <li class="catalog-items__snack">Азiатська</li>
+                  </ul>
+                </div>
 
-            <p class="time">40 - 50 Min</p>
-          </div>
+                <p class="time">40 - 50 Min</p>
+              </div>
+            </a>
         </div>
 
         <div class="catalog__row-block">
-          <img src="images/img/3.jpg" alt="YIZHA">
-          <div class="catalog__row-block--wrapper">
-            <p class="restaurant-table">YIZHA</p>
+          <a href="#/" class="catalog__row-block--link">
+            <img class="catalog__row-block--link--img" src="images/img/3.jpg" alt="YIZHA">
+            <div class="catalog__row-block--wrapper">
 
-            <div class="catalog-items">
-              <div class="currency">₴</div>
-              <div class="currency">₴</div>
-              <ul>
-                <li>Американська</li>
-                <li>Бургеры</li>
-                <li>Вулична...</li>
-              </ul>
+              <p class="restaurant-table">YIZHA</p>
+
+              <div class="catalog-items">
+                <div class="currency">₴</div>
+                <div class="currency">₴</div>
+                <ul>
+                  <li class="catalog-items__snack">Американська</li>
+                  <li class="catalog-items__snack">Бургеры</li>
+                  <li class="catalog-items__snack">Вулична...</li>
+                </ul>
+              </div>
+
+              <p class="time">35 - 45 Min</p>
             </div>
-
-            <p class="time">35 - 45 Min</p>
-          </div>
+          </a>
         </div>
 
         <div class="catalog__row-block">
-          <img src="images/img/4.jpg" alt="MacDonalds">
-          <div class="catalog__row-block--wrapper">
-            <p class="restaurant-table">Musafir (вул. Саксаганського)</p>
+          <a href="#/" class="catalog__row-block--link">
+            <img class="catalog__row-block--link--img" src="images/img/4.jpg" alt="Musafir">
+            <div class="catalog__row-block--wrapper">
+              <p class="restaurant-table">Musafir (вул. Саксаганського)</p>
 
-            <div class="catalog-items">
-              <div class="currency">₴</div>
-              <div class="currency">₴</div>
-              <ul>
-                <li>Близькосхідна</li>
-              </ul>
+              <div class="catalog-items">
+                <div class="currency">₴</div>
+                <div class="currency">₴</div>
+                <ul>
+                  <li class="catalog-items__snack">Близькосхідна</li>
+                </ul>
+              </div>
+
+              <p class="time">30 - 40 Min</p>
             </div>
-
-            <p class="time">30 - 40 Min</p>
-          </div>
+          </a>
         </div>
 
         <div class="catalog__row-block">
-          <img src="images/img/5.jpg" alt="WOKWEI">
-          <div class="catalog__row-block--wrapper">
-            <p class="restaurant-table">WOKWEI</p>
+          <a href="#/" class="catalog__row-block--link">
+            <img class="catalog__row-block--link--img" src="images/img/5.jpg" alt="WOKWEI">
+            <div class="catalog__row-block--wrapper">
+              <p class="restaurant-table">WOKWEI</p>
 
-            <div class="catalog-items">
-              <div class="currency">₴</div>
-              <ul>
-                <li>Китайська</li>
-                <li>Азiатська</li>
-              </ul>
+              <div class="catalog-items">
+                <div class="currency">₴</div>
+                <ul>
+                  <li class="catalog-items__snack">Китайська</li>
+                  <li class="catalog-items__snack">Азiатська</li>
+                </ul>
+              </div>
+
+              <p class="time">40 - 50 Min</p>
             </div>
-
-            <p class="time">40 - 50 Min</p>
-          </div>
+          </a>
         </div>
 
         <div class="catalog__row-block">
-          <img src="images/img/6.jpg" alt="YIZHA">
-          <div class="catalog__row-block--wrapper">
-            <p class="restaurant-table">Milk Bar</p>
+          <a href="#/" class="catalog__row-block--link">
+            <img class="catalog__row-block--link--img" src="images/img/6.jpg" alt="Milk Bar">
+            <div class="catalog__row-block--wrapper">
+              <p class="restaurant-table">Milk Bar</p>
 
-            <div class="catalog-items">
-              <div class="currency">₴</div>
-              <div class="currency">₴</div>
-              <ul>
-                <li>Десерти</li>
-                <li>Європейська</li>
-              </ul>
+              <div class="catalog-items">
+                <div class="currency">₴</div>
+                <div class="currency">₴</div>
+                <ul>
+                  <li class="catalog-items__snack">Десерти</li>
+                  <li class="catalog-items__snack">Європейська</li>
+                </ul>
+              </div>
+
+              <p class="time">25 - 35 Min</p>
             </div>
-
-            <p class="time">25 - 35 Min</p>
-          </div>
+          </a>
         </div>
 
         <div class="catalog__row-block">
-          <img src="images/img/7.jpg" alt="MacDonalds">
-          <div class="catalog__row-block--wrapper">
-            <p class="restaurant-table">Mimosa Brooklyn Pizza</p>
+          <a href="#/" class="catalog__row-block--link">
+            <img class="catalog__row-block--link--img" src="images/img/7.jpg" alt="Mimosa Brooklyn Pizza">
+            <div class="catalog__row-block--wrapper">
+              <p class="restaurant-table">Mimosa Brooklyn Pizza</p>
 
-            <div class="catalog-items">
-              <div class="currency">₴</div>
-              <div class="currency">₴</div>
-              <ul>
-                <li>Італійська</li>
-                <li>Піцца</li>
-                <li>Американська</li>
-              </ul>
+              <div class="catalog-items">
+                <div class="currency">₴</div>
+                <div class="currency">₴</div>
+                <ul>
+                  <li class="catalog-items__snack">Італійська</li>
+                  <li class="catalog-items__snack">Піцца</li>
+                  <li class="catalog-items__snack">Американська</li>
+                </ul>
+              </div>
+
+              <p class="time">15 - 25 Min</p>
             </div>
-
-            <p class="time">15 - 25 Min</p>
-          </div>
+          </a>
         </div>
 
         <div class="catalog__row-block">
-          <img src="images/img/8.jpg" alt="WOKWEI">
-          <div class="catalog__row-block--wrapper">
-            <p class="restaurant-table">To Be</p>
+          <a href="#/" class="catalog__row-block--link">
+            <img class="catalog__row-block--link--img" src="images/img/8.jpg" alt="To Be">
+            <div class="catalog__row-block--wrapper">
+              <p class="restaurant-table">To Be</p>
 
-            <div class="catalog-items">
-              <div class="currency">₴</div>
-              <div class="currency">₴</div>
-              <ul>
-                <li>Японська</li>
-                <li>Азiатська</li>
-                <li>Сушi</li>
-              </ul>
+              <div class="catalog-items">
+                <div class="currency">₴</div>
+                <div class="currency">₴</div>
+                <ul>
+                  <li class="catalog-items__snack">Японська</li>
+                  <li class="catalog-items__snack">Азiатська</li>
+                  <li class="catalog-items__snack">Сушi</li>
+                </ul>
+              </div>
+
+              <p class="time">25 - 35 Min</p>
             </div>
-
-            <p class="time">25 - 35 Min</p>
-          </div>
+          </a>
         </div>
 
         <div class="catalog__row-block">
-          <img src="images/img/9.jpg" alt="YIZHA">
-          <div class="catalog__row-block--wrapper">
-            <p class="restaurant-table">Druzi (вул. Прорiзна)</p>
+          <a href="#/" class="catalog__row-block--link">
+            <img class="catalog__row-block--link--img" src="images/img/9.jpg" alt="Druzi">
+            <div class="catalog__row-block--wrapper">
+              <p class="restaurant-table">Druzi (вул. Прорiзна)</p>
 
-            <div class="catalog-items">
-              <div class="currency">₴</div>
-              <div class="currency">₴</div>
-              <ul>
-                <li>Американська</li>
-                <li>Сучасна європейська</li>
-              </ul>
+              <div class="catalog-items">
+                <div class="currency">₴</div>
+                <div class="currency">₴</div>
+                <ul>
+                  <li class="catalog-items__snack">Американська</li>
+                  <li class="catalog-items__snack">Сучасна європейська</li>
+                </ul>
+              </div>
+
+              <p class="time">30 - 40 Min</p>
             </div>
-
-            <p class="time">30 - 40 Min</p>
-          </div>
+          </a>
         </div>
       </div>
     </div>
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="container">
       <div class="logo-white">
         <a href="index.html"></a>
@@ -278,49 +331,56 @@
       <div class="site-map">
         <div class="site-map__cell">
           <div class="site-map__cell--language">
-            <select name="lang" id="lang">
-              <option value="eng">english</option>
-              <option value="eng">russian</option>
-              <option value="eng">ukraine</option>
+            <select class="site-map__language--select"
+                    name="lang"
+                    id="lang"
+                    aria-label="site-map__language--select"
+            >
+              <option class="site-map__language--select--option"
+                      value="eng">english</option>
+              <option class="site-map__language--select--option"
+                      value="eng">russian</option>
+              <option class="site-map__language--select--option"
+                      value="eng">ukraine</option>
             </select>
           </div>
           <div class="site-map__cell--social">
-            <a href="index.html"><span class="hashtag">#</span>UberEats</a>
+            <a class="site-map__cell--social--link" href="index.html"><span class="hashtag">#</span>UberEats</a>
             <div class="site-map__cell--social--links">
-              <a href="//www.facebook.com/UberEats/" class="social--links--facebook"></a>
-              <a href="//twitter.com/ubereats" class="social--links--twitter"></a>
-              <a href="//www.instagram.com/ubereats/" class="social--links--instagram"></a>
+              <a href="https://www.facebook.com/UberEats/" class="social--links--facebook" aria-hidden="true"></a>
+              <a href="https://www.twitter.com/ubereats" class="social--links--twitter" aria-hidden="true"></a>
+              <a href="https://www.instagram.com/ubereats/" class="social--links--instagram" aria-hidden="true"></a>
             </div>
           </div>
         </div>
         <div class="site-map__cell">
-          <ul>
-            <li class="site-map__cell-link"><a href="//about.ubereats.com">About UberEats</a></li>
-            <li class="site-map__cell-link"><a href="//uber.com/drive/delivery/">Become a Delivery Partner</a></li>
-            <li class="site-map__cell-link"><a href="//about.ubereats.com/restaurants">Become a Restaurant Partner</a></li>
+          <ul class="site-map__cell--wrap">
+            <li><a class="site-map__cell-link" href="https://about.ubereats.com">About UberEats</a></li>
+            <li><a class="site-map__cell-link" href="https://uber.com/drive/delivery/">Become a Delivery Partner</a></li>
+            <li><a class="site-map__cell-link" href="https://about.ubereats.com/restaurants">Become a Restaurant Partner</a></li>
           </ul>
         </div>
 
         <div class="site-map__cell">
-          <ul>
-            <li class="site-map__cell-link"><a href="//about.ubereats.com/cities/">See all cities</a></li>
-            <li class="site-map__cell-link"><a href="//help.uber.com/h/a3e4363b-761f-4acd-a555-1eff290f5ee6">Pricing</a></li>
-            <li class="site-map__cell-link"><a href="//help.uber.com/eaters">Help</a></li>
-            <li class="site-map__cell-link"><a href="//about.ubereats.com/faq">FAQs</a></li>
+          <ul class="site-map__cell--wrap">
+            <li><a class="site-map__cell-link" href="https://about.ubereats.com/cities/">See all cities</a></li>
+            <li><a class="site-map__cell-link" href="https://help.uber.com/h/a3e4363b-761f-4acd-a555-1eff290f5ee6">Pricing</a></li>
+            <li><a class="site-map__cell-link" href="https://help.uber.com/eaters">Help</a></li>
+            <li><a class="site-map__cell-link" href="https://about.ubereats.com/faq">FAQs</a></li>
           </ul>
         </div>
       </div>
       <div class="store">
         <div class="store__appStore">
-          <a href="https://www.apple.com/ios/app-store/"></a>
+          <a class="store__appStore--link" href="https://www.apple.com/ios/app-store/" aria-hidden="true"></a>
         </div>
         <div class="store__googlePlay">
-          <a href="https://store.google.com/countrypicker"></a>
+          <a class="store__googlePlay--link" href="https://store.google.com/countrypicker" aria-hidden="true"></a>
         </div>
       </div>
       <div class="privacy">
         <a class="privacy__rights">
-          &copy 2019 Uber Technologies Inc
+          © 2019 Uber Technologies Inc
         </a>
         <a href="https://privacy.uber.com/policy/" class="privacy__link">
           Privacy
@@ -339,8 +399,8 @@ Btn top
 
 -->
 
-<button onclick="topFunction()" id="btn-top" title="Go to top">
-  <img class="btnImg animated" src="images/icons/arrowTop.png" alt="">
+<button onclick="topFunction()" id="btn-top" title="Go to top" name="button-top">
+  <img class="btnImg animated" src="images/icons/arrowTop.png" alt="button-to-top">
 </button>
 
 <!--
@@ -352,8 +412,8 @@ Onload window
   <div class="bgPage__wrap">
     <div class="bgPage__logo animated delay-3s"></div>
     <div class="h1-wrap animated delay-2s fadeOutUp">
-      <h1 class="animated fadeInRightBig">быстро</h1>
-      <h1 class="green animated fadeInLeftBig">и вкусно</h1>
+      <h1 class="animated fadeInRightBig">Быстрая доставка</h1>
+      <h1 class="green animated fadeInLeftBig">из любимых ресторанов</h1>
     </div>
   </div>
 </div>
@@ -367,28 +427,30 @@ Modal window
 <div class="modal-wrap hide" id="sign-in">
 </div>
 <div class="modal hide animated tada">
-  <button class="modal-close">Close</button>
-  <form method="post" action="" id="form">
+  <button name="button-close" class="modal-close">Close</button>
+  <form method="post" id="form">
     <label for="name">
       <input
+              name="name"
               type="text"
               placeholder="Ваше имя"
-              name="name"
               id="name"
               minlength="3"
+              class="modal__input"
       >
     </label>
     <label for="email">
       <input
+              name="email"
               type="email"
               placeholder="Ваш email"
-              name="email"
               id="email"
               aria-required="true"
+              class="modal__input"
       >
     </label>
     <button
-            name="sub"
+            name="button-sub"
             type="submit"
             id="submitBtn"
             class="submit"

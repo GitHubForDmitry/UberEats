@@ -1,0 +1,13 @@
+$silver: #626262;
+
+@mixin flex-center{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+@mixin font($fs, $lh) {
+  font-family: "Roboto", sans-serif;
+  font-size: $fs + px;
+  line-height: $lh + px;
+}

@@ -1,0 +1,153 @@
+.sticky {
+  padding: 16px 0;
+  margin-bottom: 40px;
+  background: #fff;
+  box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2; }
+
+.header {
+  display: flex;
+  justify-content: space-between; }
+
+.header__logo--link {
+  display: block; }
+
+.header__logo,
+.header__order,
+.header__auth {
+  display: flex;
+  justify-content: center;
+  align-self: center; }
+
+.header__order span {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #626262;
+  margin-right: 9px; }
+.header__order .asap__sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0; }
+  .header__order .asap__sub-menu .asap__sub-menu--link {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-right: 0;
+    padding: 0 5px;
+    text-transform: none; }
+.header__order .asap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-self: center; }
+  .header__order .asap .asap__select {
+    padding: 7px;
+    text-align: center;
+    outline: none; }
+  .header__order .asap .asap__select,
+  .header__order .asap .asap__select--option {
+    margin-right: 9px;
+    box-sizing: border-box;
+    appearance: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    text-align-last: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1d1d1d;
+    outline: none;
+    background-color: #fff; }
+    .header__order .asap .asap__select,
+    .header__order .asap .asap__select--option {
+      -webkit-appearance: none;
+      appearance: none; }
+
+.destination {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-self: center; }
+  .destination .destination__current-location {
+    display: block;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    background: url(../images/icons/location.svg) no-repeat center;
+    background-size: cover;
+    width: 15px;
+    height: 17px; }
+  .destination input[type="text"] {
+    width: 292px;
+    padding: 7px 10px 7px 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+    color: #1d1d1d;
+    outline: none; }
+    .destination input[type="text"]::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #626262;
+      opacity: 1;
+      /* Firefox */ }
+    .destination input[type="text"]:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #626262; }
+    .destination input[type="text"]::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: #626262; }
+  .destination__form--btn {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px; }
+
+.auth__sign a {
+  margin-right: 16px;
+  border: 1px solid #e0e0e0; }
+  .auth__sign a:hover {
+    background-color: #59bd5a;
+    color: #fff;
+    border: 1px solid #59bd5a;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1); }
+
+.auth__register a {
+  background: #262626;
+  border: 1px solid #262626;
+  color: #fff;
+  margin-right: 27px; }
+  .auth__register a:hover {
+    background-color: #59bd5a;
+    color: #fff;
+    border: 1px solid #59bd5a;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1); }
+
+.auth__basket a {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-image: url(../images/icons/basket.svg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  width: 16px;
+  height: 19px; }
+
+/*# sourceMappingURL=header.css.map */
